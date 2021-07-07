@@ -1,20 +1,77 @@
+body {
+  background-color: grey;
+}
 #my-canvas  {
   background-color: lightgray;
 }
 
-#start-btn,
+.container  {
+  position: relative;
+  width: 100%;
+}
+
+/* START IMG */
+.container img {
+  width: 800px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+/* START TITLE */
+.start-title {
+  display: flex;
+  position: absolute;
+  color: white;
+  margin: 0 auto;
+  top: 40%;
+  left: 38%;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* START BTN */
+
+#start-btn {
+  background-image: linear-gradient(
+    to right,
+    #ff6e7f 0%,
+    #bfe9ff 51%,
+    #ff6e7f 100%
+  );
+  position: absolute;
+  top: 55%;
+  left: 44%;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border: 1px solid white;
+  transition: 0.5s;
+  /*  */
+  text-align: center;
+  background-size: 200% auto;
+  border-radius: 10px;
+  display: block;
+}
+
+#start-btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* RESTART BTN */
 #restart-btn  {
   background-color: #079f14;
   color: white;
   padding: 20px;
   font-size: 20px;
   margin-top: 40px;
-}
-
-.container  {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #my-canvas  {
