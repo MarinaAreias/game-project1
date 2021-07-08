@@ -1,13 +1,20 @@
 body {
   background-color: grey;
 }
-#my-canvas  {
-  background-color: lightgray;
-}
 
 .container  {
   position: relative;
   width: 100%;
+}
+/* canvas */
+#my-canvas {
+  display: none;
+  background-color: white;
+  margin: 0 auto;
+}
+
+#gameover-screen {
+  display: none;
 }
 
 /* START IMG */
@@ -52,7 +59,6 @@ body {
   box-shadow: 0 0 20px #eee;
   border: 1px solid white;
   transition: 0.5s;
-  /*  */
   text-align: center;
   background-size: 200% auto;
   border-radius: 10px;
@@ -72,12 +78,4 @@ body {
   padding: 20px;
   font-size: 20px;
   margin-top: 40px;
-}
-
-#my-canvas  {
-  display: none;
-}
-
-#gameover-screen {
-  display: none;
 }
