@@ -6,7 +6,7 @@ const canvas = document.querySelector("#my-canvas");
 canvas.width = 800;
 canvas.height = 500;
 // "paint brush"
-const ctx = canvas.getContext("2D");
+const ctx = canvas.getContext("2d");
 
 //BTNS
 // Start BTN
@@ -25,11 +25,13 @@ let gameObj;
 // START BTN
 
 startBtn.addEventListener("click", () => {
-  //   show canvas
+  //show canvas
   canvas.style.display = "block";
   //need to hide start screen
   splashScreen.style.display = "none";
 
   // here game is created using classes => see Game in classes folder
   gameObj = new Game();
+
+  gameObj.gameloop();
 });

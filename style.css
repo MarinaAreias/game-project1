@@ -11,6 +11,7 @@ body {
   display: none;
   background-color: white;
   margin: 0 auto;
+  border-radius: 4px;
 }
 
 #gameover-screen {
