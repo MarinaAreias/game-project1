@@ -39,5 +39,7 @@ startBtn.addEventListener("click", () => {
 // Event listener for player moove
 
 window.addEventListener("keydown", (event) => {
-  gameObj.player.playerControls(event);
+  if (gameObj) {
+    gameObj.player.playerControls(event);
+  }
 });
