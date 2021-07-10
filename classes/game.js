@@ -14,10 +14,11 @@ class Game {
     // 1. clearing canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // 2.movements of elements or other actions
+    // 2.movements of elements or other action
 
     // 3. drawing elements
     ctx.drawImage(this.bg, 0, 0, canvas.width, canvas.height);
+
     // player
     this.player.drawPlayer();
 
