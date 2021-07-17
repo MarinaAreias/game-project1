@@ -3,10 +3,11 @@ class Player {
     this.image = new Image();
     this.image.src = "../imgs/triangle.png";
     // this.player;
-    this.x = 200;
+    this.x = 300;
     this.y = 400;
     this.width = 40;
     this.height = 30;
+    this.lifes = 3;
   }
 
   //   draw player
@@ -24,8 +25,6 @@ class Player {
     }
   };
 
-  // player life
-
   // player enemy coallision
 
   playerEnemyCollision = (enemy) => {
@@ -34,6 +33,15 @@ class Player {
       this.x + this.width > enemy.x &&
       this.y < enemy.y + enemy.height &&
       this.y + this.height > enemy.y
+    );
+  };
+
+  playerPowerUpCollision = (powerUp) => {
+    return (
+      this.x < powerUp.x + powerUp.width &&
+      this.x + this.width > powerUp.x &&
+      this.y < powerUp.y + powerUp.height &&
+      this.y + this.height > powerUp.y
     );
   };
 }
