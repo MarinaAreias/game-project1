@@ -42,7 +42,8 @@ body {
 }
 /* START BTN */
 
-#start-btn {
+#start-btn,
+#restart-btn {
   background-image: linear-gradient(
     to right,
     #ff6e7f 0%,
@@ -74,9 +75,7 @@ body {
 
 /* RESTART BTN */
 #restart-btn  {
-  background-color: #079f14;
-  color: white;
-  padding: 20px;
-  font-size: 20px;
-  margin-top: 40px;
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
